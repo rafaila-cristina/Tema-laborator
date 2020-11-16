@@ -2,17 +2,17 @@ import java.io.*;
 import java.util.*;
 
 public class angajati {
-    private ArrayList<String> mAngajati;
+    private ArrayList<Persoana> mAngajati;
 
-    public angajati(ArrayList<String> mAngajati) {
+    public angajati(ArrayList<Persoana> mAngajati) {
         this.mAngajati = mAngajati;
     }
 
-    public ArrayList<String> getmAngajati() {
+    public ArrayList<Persoana> getmAngajati() {
         return mAngajati;
     }
 
-    public void setmAngajati(ArrayList<String> mAngajati) {
+    public void setmAngajati(ArrayList<Persoana> mAngajati) {
         this.mAngajati = mAngajati;
     }
 
