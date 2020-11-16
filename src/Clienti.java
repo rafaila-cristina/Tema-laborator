@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Clienti {
-        private ArrayList<String> listaClienti;
+        private ArrayList<String> mClienti;
         private int tipClient;
         private boolean premium;
         private boolean obisnuit;
