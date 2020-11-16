@@ -1,11 +1,11 @@
 public class Produse {
 
-    private String denumire;
+    private String denumire_produs;
     private int pret;
     private String cod;
 
-    public String getDenumire() {
-        return denumire;
+    public String getDenumire_produs() {
+        return denumire_produs;
     }
 
     public int getPret() {
@@ -16,8 +16,8 @@ public class Produse {
         return cod;
     }
 
-    public void setDenumire(String denumire) {
-        this.denumire = denumire;
+    public void setDenumire_produs(String denumire_produs) {
+        this.denumire_produs = denumire_produs;
     }
 
     public void setPret(int pret) {
@@ -34,7 +34,7 @@ public class Produse {
         builder.append("Descriere produs: \n");
 
         builder.append("Denumire: ");
-        builder.append(this.denumire);
+        builder.append(this.denumire_produs);
         builder.append("\n");
 
         builder.append("Pret: ");
