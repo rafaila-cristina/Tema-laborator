@@ -2,13 +2,23 @@ import java.util.ArrayList;
 
 public class Clienti {
         private ArrayList<String> listaClienti;
-        private String tipClient;
+        private int tipClient;
+        private boolean premium;
+        private boolean obisnuit;
         private String nume;
         private int datorii;
 
-        void set_tip(String tip)
-        {
-            this.tipClient=tip;
+        void set_tip(int tip) {
+            this.tipClient = tip;
+            if (this.tipClient == 1) {
+                premium = true;
+                obisnuit = false;
+            }
+            else
+            {
+                premium=false;
+                obisnuit=true;
+            }
         }
 
         void set_nume(String nume)
@@ -31,7 +41,16 @@ public class Clienti {
             this.datorii=this.datorii-n;
         }
 
-        
+        String get_nume()
+        {
+            return this.nume;
+        }
+
+        int get_datorie()
+        {
+            return this.datorii;
+        }
+
 
     @Override
     public String toString() {
